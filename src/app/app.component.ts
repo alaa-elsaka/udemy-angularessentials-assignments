@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment1';
+
+  rootItems = ["Oranges", "Banana","Apples"];
+
+  onItemAdded(newItem:string){
+    this.rootItems.push(newItem);
+   // console.log(this.rootItems);
+  }
 }
